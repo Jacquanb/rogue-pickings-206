@@ -31,6 +31,7 @@ h4 {
 }
 h1 {
 	font-size: 30px;
+	border-bottom: 3px solid #77a466;
 }
 h2 {
     font-size: 24px;
@@ -56,10 +57,6 @@ header {
 	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
-}
-
-h1 {
-	border-bottom: 3px solid #77a466;
 }
 
 nav,
@@ -180,3 +177,59 @@ footer span {
 	color: #77a466;
 	font-size: 14px;
 }
+
+@media all and (min-width:768px) {
+    /* Tablet styles here */
+
+		.bottom-section {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+			flex-flow: row nowrap;
+			border-top: 3px solid #eee;
+		}
+
+		.section-one {
+			display: flex;
+			align-items: center;
+		}
+
+		.section-two {
+			display: flex;
+			align-items: center;
+			border-right: 3px solid #eee;
+			border-left: 3px solid #eee;
+		}
+
+		.section-three {
+			display: flex;
+			align-items: center;
+		}
+
+}
+
+@media all and (min-width:1200px) {
+    /* Desktop styles here */
+
+  header nav ul {
+    display: flex;
+		justify-content: space-between;
+	}
+
+	nav {
+		display: flex;
+		justify-content: flex-end;
+		width: 50%;
+	}
+
+		nav li {
+			padding-right: 30px;
+		}
+
+		h1  {
+			border:none;
+			display: flex;
+			justify-content: flex-start;
+			width: 50%;
+		}
